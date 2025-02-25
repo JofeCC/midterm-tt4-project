@@ -1,0 +1,32 @@
+// list-products.scss
+
+// Dependencies
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+
+// Card
+@import "./node_modules/bootstrap/scss/card";
+
+// Alert
+@import "./node_modules/bootstrap/scss/alert";
+
+#products {
+    display: flex;
+    flex-wrap: wrap;         // Allow items to wrap onto the next line
+    justify-content: space-between; // Space out items evenly
+}
+
+.card {
+    flex: 0 1 calc(33.33% - 1rem); // Set each card to take up one-third of the row
+    margin-bottom: 1rem;  // Add some space between rows
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Optional: Add shadow for better visibility
+    border-radius: 5px;   // Optional: Add rounded corners
+    overflow: hidden;      // Ensure content doesn't overflow the card
+}
+
+.card-price {
+    font-weight: bold; // Make the price bold
+    color: #28a745;    // Change the color to match the button
+    margin-top: 0.5rem; // Add some space above
+}
